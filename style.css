@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-container{
+    min-height: 106vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 70px;
+}
+
+.box-container .box{
+    height: 500px;
+    width: 300px;
+    margin:20px 40px;
+    border-radius: 0px;
+    box-shadow: 0 3px 5px rgba(0,0,0,.3);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+}
+
+.box-container .box::before,.box-container .box::after{
+    content: '';
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    opacity: .5;
+}
+
+.box-container .box::before{
+ 
+    top:-10%;
+    left: 80%;
+}
+
+.box-container .box::after{
+    background: rgb(51, 238, 219);
+    bottom:-10%;
+    right: 80%;
+}
+
+.box-container .box .title{
+    margin: 30px 0;
+    font-size:  26px;
+    color: rgb(51, 238, 219);
+}
+
+.box-container .box .price{
+    height: 160px;
+    width: 160px;
+    color: #fff;
+    background: rgb(51, 238, 219);
+    padding: 57px 0 0;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+}
+
+.box-container .box .price .currency{
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: 300;
+}
+
+.box-container .box .amount{
+    font-size: 58px;
+    line-height: 45px;
+    font-weight: 700;
+}
+
+.box-container .box .duration{
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: -5px;
+    letter-spacing: 1px;
+}
+
+.box-container .box ul li{
+    text-align: left;
+    padding-left: 50px;
+    margin:20px auto;
+    color: #655;
+    list-style: none;
+}
+
+.box-container .box ul li i{
+    padding:0 10px;
+    font-weight: 990;
+    color: rgb(89, 177, 168);
+}
+
+.box-container .box button {
+    height: 40px;
+    width: 140px;
+    outline: none;
+    border-radius: 50px;
+    background: none;
+    color: rgb(89, 177, 168);
+    border:2px solid rgb(51, 238, 219);
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.box-container .box button:hover {
+    background: rgb(51, 238, 219);
+    color: white;
+}
+
+.box-container .yellow .title {
+    color: #ebc11b;
+}
+
+.box-container .yellow .price {
+    background-color: #ebc11b;
+}
+
+.box-container .yellow ul li i {
+    color: #ebc11b;
+}
+
+.box-container .yellow button {
+    color: #ebc11b;
+    border-color: #ebc11b;
+}
+
+.box-container .yellow button:hover {
+    background: #ebc11b;
+}
+
+.box-container .yellow::after {
+    background-color: #ebc11b;
+}
+
+
+
+.box-container .red .title {
+    color: #42a708;
+}
+
+.box-container .red .price {
+    background-color: #42a708;
+}
+
+.box-container .red ul li i {
+    color: #42a708;
+    text-align: center;
+}
+.box-container .red ul li i2{
+    color: #42a708;
+    text-align: center;
+ 
+}
+
+.box-container .red button {
+    color: #42a708;
+    border-color: #42a708;
+}
+
+.box-container .red button:hover {
+    background: #42a708;
+}
+
+.box-container .red::after {
+    background-color: #42a708;
+}
